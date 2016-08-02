@@ -1,0 +1,9 @@
+@keyframes ripple-pulse {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1.5, 1.5);
+    border-color: rgba($tan, 0);
+  }
+}
