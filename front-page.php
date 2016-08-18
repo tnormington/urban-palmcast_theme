@@ -38,7 +38,9 @@
 				</main> <!-- end #main -->
 				<main id="main-right" class="large-6 small-12 columns">
 					<div class="logo-area">
-						<img class="up-logo" src="<?php bloginfo('url');?>/wp-content/themes/urban-palmcast_theme/assets/images/logo_on-dark.png">
+						<a href="/">
+							<img class="up-logo" src="<?php bloginfo('url');?>/wp-content/themes/urban-palmcast_theme/assets/images/logo_on-dark.png">
+						</a>
 						<div class="ring outer">
 							<div class="ring middle">
 								<div class="ring inner">
@@ -46,11 +48,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="menu-area">
+					<!-- <div class="menu-area">
 						<button class="menu-toggle" id="js-menu-toggle">Menu</button>
 						<div class="menu-overlay" id="js-menu-overlay"></div>
 						<?php wp_nav_menu(); ?>
-					</div>
+					</div> -->
 					<div class="panel">
 						<h2 class="social-media-header">Follow Us</h2>
 						<ul class="social-media-list">

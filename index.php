@@ -32,8 +32,8 @@
 							</div>
 						</div>
 					</div>
-					<button class="menu-toggle">Menu</button>
-					<?php wp_nav_menu(); ?>
+					<!-- <button class="menu-toggle">Menu</button>
+					<?php wp_nav_menu(); ?> -->
 					<div class="panel">
 						<h2>Follow Us</h2>
 						<ul class="social-media-list">

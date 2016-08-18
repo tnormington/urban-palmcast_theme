@@ -12,12 +12,9 @@ Template Name: Two Column (even)
 
 		    <main id="main-left" class="llarge-6 small-12 columns">
 					<div class="panel">
+						<h1 class="block-header"><?php the_title(); ?></h1>
 
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-					<header class="article-header">
-						<h1 class="page-title"><?php the_title(); ?></h1>
-					</header> <!-- end article header -->
 
 					<?php get_template_part( 'parts/loop', 'left-column' ); ?>
 
@@ -28,10 +25,12 @@ Template Name: Two Column (even)
 			</main> <!-- end #main -->
 
 			<main id="main-right" class="large-6 small-12 columns">
-				<div class="panel">
-
-
-				</div>
+				<?php //var_dump(get_field('right_column_content')); ?>
+				<?php if('' !== get_field('right_column_content')): ?>
+					<div class="panel">
+						<?php get_template_part( 'parts/loop', 'right-column' ); ?>
+					</div>
+				<?php endif; ?>
 
 			</main>
 

@@ -8,17 +8,38 @@ jQuery(document).ready(function() {
 
     var $menu_toggle = jQuery('#js-menu-toggle');
     var $menu_overlay = jQuery('#js-menu-overlay');
+    var $menu = jQuery('.menu-main-menu-container');
+
+
 
     $menu_toggle.click(function() {
       console.log('clicked');
-      $menu_overlay.velocity({
-          properties: {
-            scale: 10,
-            top: '50%',
-            right: '50%',
-           },
-          options: { duration: 500 }
-      });
+      var $that = jQuery(this);
+      if(!$that.hasClass('open')) {
+        // if the button doesn't have the 'open' class
+        // open the menu
+        $menu_overlay.animate({
+          width: '150vw',
+          height: '150vw',
+        });
+        // $menu.fadeIn('fast');
+        // $menu.css('opacity','100%', 'display', 'block');
+        $menu.animate({
+          opacity: '100',
+        });
+        $menu.css('pointerEvents', 'initial');
+      } else {
+        // the button has the 'open' class
+        // close the menu
+        $menu_overlay.animate({
+          width: '0px',
+          height: '0px',
+        });
+        $menu.animate({
+          opacity: '0',
+        });
+      }
+      jQuery(this).toggleClass('open');
     });
 
     // Remove empty P tags created by WP inside of Accordion and Orbit

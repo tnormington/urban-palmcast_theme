@@ -1,0 +1,50 @@
+.menu-area {
+  position: relative;
+  .menu-toggle {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-color: $blue;
+    padding: 1em;
+    text-transform: uppercase;
+    display: block;
+    // margin: 1em auto;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgba(black, 0.45);
+    position: fixed;
+    top: 2em;
+    right: 2em;
+    // transform: translate(-50%, -50%);
+    z-index: 15;
+  }
+  .menu-overlay {
+    background-color: darken($blue, 35%);
+    display: block;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    height: 0px;
+    width: 0px;
+    transform: translate(50%, -50%);
+    border-radius: 50%;
+  }
+  .menu-main-menu-container {
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    ul {
+      list-style-type: none;
+      font-size: 2em;
+      li {
+        display: block;
+      }
+      a {
+        color: white;
+      }
+    }
+  }
+}

@@ -35,6 +35,9 @@ require_once(get_template_directory().'/assets/translation/translation.php');
 // Use this as a template for custom post types
 require_once(get_template_directory().'/assets/functions/cpt-beer-of-the-week.php');
 
+// Use this as a template for custom post types
+require_once(get_template_directory().'/assets/functions/cpt-podcast.php');
+
 // Customize the WordPress login menu
 // require_once(get_template_directory().'/assets/functions/login.php');
 

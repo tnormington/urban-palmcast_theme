@@ -50,6 +50,11 @@
 				<div class="off-canvas-content" data-off-canvas-content>
 
 					<header class="header" role="banner">
+						<div class="menu-area">
+							<button class="menu-toggle" id="js-menu-toggle">Menu</button>
+							<div class="menu-overlay" id="js-menu-overlay"></div>
+							<?php wp_nav_menu(); ?>
+						</div>
 						<div class="site-title-wrapper">
 						 <!-- This navs will be applied to the topbar, above all content
 							  To see additional nav styles, visit the /parts directory -->
