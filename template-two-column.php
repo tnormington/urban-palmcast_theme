@@ -20,6 +20,12 @@ Template Name: Two Column (even)
 
 				<?php endwhile; endif; ?>
 
+				<?php if(is_page('about-us')) : ?>
+
+					<?php get_template_part('parts/loop', 'about-us'); ?>
+
+				<?php endif; ?>
+
 			</div>
 
 			</main> <!-- end #main -->

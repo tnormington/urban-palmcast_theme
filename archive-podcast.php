@@ -6,23 +6,23 @@
 
 		    <main id="main" class="large-12 columns" role="main">
 
+					<div class="panel">
+						<h1 class="block-header">The Podcast</h1>
 			    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-						<div class="panel">
-							<h1 class="block-header">The Podcast</h1>
 
 					<!-- To see additional archive styles, visit the /parts directory -->
-					<?php get_template_part( 'parts/loop', 'archive-grid' ); ?>
+					<?php get_template_part( 'parts/loop', 'archive' ); ?>
 
 				<?php endwhile; ?>
 
-					<?php joints_page_navi(); ?>
+					<!-- <?php joints_page_navi(); ?> -->
 
 				<?php else : ?>
 
 					<?php get_template_part( 'parts/content', 'missing' ); ?>
-				</div>
 
 				<?php endif; ?>
+			</div>
 
 		    </main> <!-- end #main -->
 		</div> <!-- end #inner-content -->
