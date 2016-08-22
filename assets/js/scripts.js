@@ -8,7 +8,7 @@ jQuery(document).ready(function() {
 
     var $menu_toggle = jQuery('#js-menu-toggle');
     var $menu_overlay = jQuery('#js-menu-overlay');
-    var $menu = jQuery('.menu-main-menu-container');
+    var $menu = jQuery('.menu-area .menu-main-menu-container');
 
 
 
@@ -19,8 +19,8 @@ jQuery(document).ready(function() {
         // if the button doesn't have the 'open' class
         // open the menu
         $menu_overlay.animate({
-          width: '150vw',
-          height: '150vw',
+          width: '200vw',
+          height: '200vw',
         });
         // $menu.fadeIn('fast');
         // $menu.css('opacity','100%', 'display', 'block');
