@@ -56,6 +56,25 @@
 							<?php wp_nav_menu(); ?>
 						</div>
 						<div class="site-title-wrapper">
+							<div class="title">
+								<img src="<?php bloginfo('url');?>/wp-content/themes/urban-palmcast_theme/assets/images/up_header_text.png">
+							</div>
+							<div class="logo-area">
+								<a href="/">
+									<img class="up-logo" src="<?php bloginfo('url');?>/wp-content/themes/urban-palmcast_theme/assets/images/logo_on-dark.png">
+								</a>
+								<div class="ring outer">
+									<div class="ring middle">
+										<div class="ring inner">
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- commented out for now, until I find a better way to handle navigation -->
+							<!-- <div class="show-for-small small-menu">
+								<?php wp_nav_menu(); ?>
+
+							</div> -->
 						 <!-- This navs will be applied to the topbar, above all content
 							  To see additional nav styles, visit the /parts directory -->
 						 <?php //get_template_part( 'parts/nav', 'offcanvas-topbar' ); ?>
