@@ -11,17 +11,25 @@
     $image = get_the_post_thumbnail();
     $title = get_the_title();
     $company = get_field('brewing_company');
+    $company_url = get_field('brewing_company_link');
     $style = get_the_terms(get_the_ID(), 'beer_of_the_week_styles')[0]->name;
     $rating = get_field('rating');
     $stars = '';
+    $abv = get_field('abv');
+    $ibu = get_field('ibu');
+
     ?>
     <?php print $image; ?>
     <h3 class="title"><?php print $title; ?></h3>
-    <h4 class="company"><?php print $company; ?></h4>
+    <h4 class="company"><a href='<?php print $company_url; ?>'><?php ($company !== null) ? print $company : print 'Brewing Company'; ?></a></h4>
     <hr>
-    <span class="style"><span class="label">Style:</span><?php print $style; ?></span>
+    <span class="style beer-meta"><span class="label">Style:</span><?php print $style; ?></span>
     <hr>
-    <span class="rating">
+    <span class="ibu beer-meta"><span class="label">IBU:</span><?php print $ibu; ?></span>
+    <hr>
+    <span class="abv beer-meta"><span class="label">ABV:</span><?php print $abv; ?>%</span>
+    <hr>
+    <span class="rating beer-meta">
       <span class="label">Rating:</span>
 
       <?php if(is_float($rating)) {
@@ -43,6 +51,7 @@
           }
         } ?></span>
     <hr>
+    <a href="<?php the_permalink(); ?>" class="button button-link button-cta">Read More</a>
     <?php endwhile; ?>
   <?php endif; ?>
 </div>
