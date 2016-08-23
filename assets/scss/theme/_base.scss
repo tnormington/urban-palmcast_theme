@@ -1,0 +1,27 @@
+.off-canvas-content {
+  background-image: linear-gradient(-1deg, #FDB79B 1%, #F48767 6%, #BC6295 22%, #3A174D 53%, #090F29 100%);
+  background-image: linear-gradient(-1deg, #FDB79B 1%, #F48767 6%, #BC6295 22%, darken($blue, 35%) 53%, darken($blue, 70%) 100%);
+  background-image: linear-gradient(-1deg, darken($blue, 15%) 0%, darken($blue, 35%) 53%, darken($blue, 70%) 100%);
+  background-image: linear-gradient(-1deg, darken($blue, 15%) 0%, darken($blue, 35%) 53%, #06254F 100%);
+  background-attachment: fixed;
+}
+
+
+#content #inner-content {
+  padding-top: 0;
+}
+
+.page {
+  label {
+    color: $white;
+  }
+  input[type="submit"] {
+    background-color: $blue;
+    padding: 1em 1.5em;
+    color: $white;
+    border: 0;
+    outline: none;
+    border-radius: 3px;
+    box-shadow: 2px 2px 4px rgba($black, 0.35);
+  }
+}

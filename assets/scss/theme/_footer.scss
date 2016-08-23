@@ -1,6 +1,18 @@
 .footer {
-  background-image: url('../images/footer_image.png');
-  background-color: transparent;
-  background-size: 1500px;
-  background-position: center;
+  .copyright {
+    font-size: 0.75em;
+  }
+  .inner-footer-wrapper {
+    background-color: $black;
+  }
+  .footer-nav {
+    ul {
+      li {
+        display: block;
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
 }

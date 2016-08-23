@@ -1,13 +1,25 @@
 article {
   .simplePullQuote {
+    // margin: 0 -1em;
+    background-image: url('../images/block_quote.png');
+    background-repeat: no-repeat;
+    background-position: left 1em;
     float: none;
     display: block;
     box-shadow: none;
     font-size: 2em;
-    background-image: none;
+    // background-image: none;
     width: 100%;
     padding: 1em 2em;
     margin: 0;
     font-style: italic;
+  }
+}
+
+@media (max-width: 400px) {
+  article {
+    .simplePullQuote {
+      padding: 1em;
+    }
   }
 }

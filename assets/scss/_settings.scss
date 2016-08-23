@@ -50,6 +50,7 @@
 $light_blue:          #A6DDED;
 $blue:                #2679ED;
 $red:                 #E81425;
+$off_white:           #FAFCEE;
 $tan:                 #F3F8D8;
 $yellow:              #F8E71C;
 
@@ -58,7 +59,7 @@ $yellow:              #F8E71C;
 
 $global-font-size: 100%;
 $global-width: rem-calc(770);
-$global-lineheight: 1.5;
+$global-lineheight: 1.7;
 $foundation-palette: (
   primary: #2199e8,
   secondary: #777,
@@ -91,8 +92,8 @@ $print-transparent-backgrounds: true;
 
 $breakpoints: (
   small: 0,
-  medium: 640px,
-  large: 1024px,
+  medium: 540px,
+  large: $global-width,
   xlarge: 1200px,
   xxlarge: 1440px,
 );
@@ -141,7 +142,7 @@ $header-margin-bottom: 0.5rem;
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $medium-gray;
-$paragraph-lineheight: 1.6;
+$paragraph-lineheight: 1.8;
 $paragraph-margin-bottom: 1rem;
 $paragraph-text-rendering: optimizeLegibility;
 $code-color: $black;

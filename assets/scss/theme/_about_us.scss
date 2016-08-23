@@ -1,0 +1,51 @@
+.individual-bio {
+  margin: 0 -1em;
+  p {
+    margin: 0;
+  }
+}
+
+.abbys-bio,
+.lukes-bio {
+  padding: 1em;
+}
+
+
+.abbys-bio {
+  background-color: $off_white;
+  color: $black;
+  font-weight: 500;
+}
+
+
+.lukes-bio {
+  background-color: $white;
+  color: $black;
+  font-weight: 500;
+}
+
+.abbys-photo,
+.lukes-photo {
+  width: 100%;
+}
+
+.one-word {
+  margin: 0 -1em;
+  background-color: $black;
+  padding-bottom: 1em;
+  .centered {
+    text-align: center;
+    margin: 1em 0;
+  }
+  iframe {
+    border-radius: 50%;
+  }
+  &:before {
+    display: block;
+    content: '';
+    height: 51px;
+    width: 100%;
+    background-image: url('../images/striped_footer.png');
+    background-repeat: repeat-x;
+  }
+}

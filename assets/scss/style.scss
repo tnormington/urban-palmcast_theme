@@ -70,6 +70,7 @@ CSS file.
 @import "main";
 
 // Modular Theme Styles
+@import "theme/base";
 @import "theme/header";
 @import "theme/content";
 @import "theme/elements";
@@ -78,6 +79,7 @@ CSS file.
 @import "theme/social_media_list";
 @import "theme/beer_of_the_week";
 @import "theme/menu";
+@import "theme/about_us";
 
 
 // Import your retina/HD styles
