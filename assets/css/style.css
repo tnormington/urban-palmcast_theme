@@ -3174,6 +3174,9 @@ article .simplePullQuote {
     background-image: url("../images/striped_footer.png");
     background-repeat: repeat-x; }
 
+.latest-podcast img {
+  width: 100%; }
+
 /******************************************************************
 
 Stylesheet: Retina Screens & Devices Stylesheet
