@@ -13,30 +13,40 @@ jQuery(document).ready(function() {
 
 
     $menu_toggle.click(function() {
-      console.log('clicked');
       var $that = jQuery(this);
       if(!$that.hasClass('open')) {
         // if the button doesn't have the 'open' class
         // open the menu
         $menu_overlay.animate({
-          width: '200vw',
-          height: '200vw',
+          width: '100vw',
+          height: '100vh',
+          opacity: '1'
         });
         // $menu.fadeIn('fast');
         // $menu.css('opacity','100%', 'display', 'block');
         $menu.animate({
           opacity: '100',
+        }, function() {
+          $menu.css({
+            pointerEvents: 'initial',
+            display: 'block',
+          });
         });
-        $menu.css('pointerEvents', 'initial');
       } else {
         // the button has the 'open' class
         // close the menu
         $menu_overlay.animate({
           width: '0px',
           height: '0px',
+          opacity: '0'
         });
         $menu.animate({
           opacity: '0',
+        }, function() {
+          $menu.css({
+            pointerEvents: 'none',
+            display: 'none',
+          });
         });
       }
       jQuery(this).toggleClass('open');

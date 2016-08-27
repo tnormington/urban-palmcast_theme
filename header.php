@@ -45,8 +45,6 @@
 
 			<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
-				<?php get_template_part( 'parts/content', 'offcanvas' ); ?>
-
 				<div class="off-canvas-content" data-off-canvas-content>
 
 					<header class="header" role="banner">
@@ -70,20 +68,5 @@
 									</div>
 								</div>
 							</div>
-							<!-- commented out for now, until I find a better way to handle navigation -->
-							<!-- <div class="show-for-small small-menu">
-								<?php wp_nav_menu(); ?>
-
-							</div> -->
-						 <!-- This navs will be applied to the topbar, above all content
-							  To see additional nav styles, visit the /parts directory -->
-						 <?php //get_template_part( 'parts/nav', 'offcanvas-topbar' ); ?>
-							 <!-- <h1 class="site-title">
-								 <span class="urban">Urban</span>
-								 <br>
-								 <span class="palmcast">Palmcast</span>
-							 </h1> -->
-							 <!-- <img class="title" src="<?php bloginfo('url');?>/wp-content/themes/urban-palmcast_theme/assets/images/up_header_text.png">
-							 <img class="logo" src="<?php bloginfo('url');?>/wp-content/themes/urban-palmcast_theme/assets/images/logo_on-dark.png"> -->
 						 </div>
 					</header> <!-- end .header -->

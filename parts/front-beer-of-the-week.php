@@ -14,6 +14,7 @@
     $company_url = get_field('brewing_company_link');
     $style = get_the_terms(get_the_ID(), 'beer_of_the_week_styles')[0]->name;
     $rating = get_field('rating');
+    $awards = get_field('awards');
     $stars = '';
     $abv = get_field('abv');
     $ibu = get_field('ibu');
@@ -25,9 +26,11 @@
     <hr>
     <span class="style beer-meta"><span class="label">Style:</span><?php print $style; ?></span>
     <hr>
+    <span class="abv beer-meta"><span class="label">ABV:</span><?php print $abv; ?>%</span>
+    <hr>
     <span class="ibu beer-meta"><span class="label">IBU:</span><?php print $ibu; ?></span>
     <hr>
-    <span class="abv beer-meta"><span class="label">ABV:</span><?php print $abv; ?>%</span>
+    <span class="awards"><h5>Awards:</h5><?php print $awards; ?></span>
     <hr>
     <span class="rating beer-meta">
       <span class="label">Rating:</span>

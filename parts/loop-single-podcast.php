@@ -1,3 +1,10 @@
+<?php
+
+$link = get_field('podcast_url');
+
+ ?>
+
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
 	<header class="article-header">
@@ -9,6 +16,9 @@
     <section class="entry-content" itemprop="articleBody">
 		<?php the_post_thumbnail('full'); ?>
 		<?php the_content(); ?>
+		<?php if($link !== ''): ?>
+			<a class="button button-cta" href="<?php print $link; ?>">Listen Now</a>
+		<?php endif; ?>
 	</section> <!-- end article section -->
 	<hr>
 

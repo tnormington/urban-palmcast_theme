@@ -16,7 +16,7 @@ $lukes_desc = get_field('lukes_section');
 </section>
 
 <section class="one-word">
-  <h2 class="centered">One Word to Describe...</h2>
+  <h2 class="centered">One Word to Describe Luke...</h2>
 <iframe class="abbys-word" width="315" height="315" src="https://www.youtube.com/embed/AlLwppEu2bI" frameborder="0" allowfullscreen></iframe>
-
+  <h2 class="centered">One Word to Describe Abby...</h2>
 <iframe width="420" height="315" src="https://www.youtube.com/embed/Eo2uz9zaYFM" frameborder="0" allowfullscreen></iframe>

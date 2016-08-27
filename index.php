@@ -7,10 +7,10 @@
 		    <main id="main-left" class="large-6 small-12 columns" role="main">
 					<img class="title" src="<?php bloginfo('url');?>/wp-content/themes/urban-palmcast_theme/assets/images/up_header_text.png">
 
-					<div class="panel">
+					<!-- <div class="panel">
 						<?php print the_content(); ?>
 						<a href="#" target="_blank" class="button button-link button-cta centered">Get It In Your Ears!</a>
-					</div>
+					</div> -->
 
 					<div class="panel">
 						<a class="twitter-timeline"

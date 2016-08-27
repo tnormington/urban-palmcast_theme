@@ -30,7 +30,7 @@
 					<div class="panel">
 						<h3 class="block-header">Terms:</h3>
 						<span class="style label">Style</span>
-						<span> - “Beer style is a term used to differentiate and categorize beers by various factors including appearance, flavour, ingredients, production, method, history, or origin” - <a href="http://wikipedia.com/">Wikipedia</a></span>
+						<span> - “Beer style is a term used to differentiate and categorize beers by various factors including appearance, flavour, ingredients, production, method, history, or origin” - <a href="https://en.m.wikipedia.org/wiki/Beer_style">Wikipedia</a></span>
 						<p class="aka">AKA: What kind of beer is it?</p>
 						<hr>
 						<span class="abv label">ABV</span>

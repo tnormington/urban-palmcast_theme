@@ -18,15 +18,20 @@
     z-index: 15;
   }
   .menu-overlay {
-    background-color: darken($blue, 35%);
+    background-color: #000;
+    background-image: url('../images/menu_bg.png');
+    background-position: left 5em;
+    background-repeat: no-repeat;
+    background-size: 50%;
     display: block;
     position: fixed;
     top: 50%;
     right: 50%;
     height: 0px;
     width: 0px;
+    opacity: 0;
     transform: translate(50%, -50%);
-    border-radius: 50%;
+    // border-radius: 50%;
     z-index: 5;
   }
   .menu-main-menu-container {
@@ -69,5 +74,15 @@
     background-color: transparent;
     border-left: 1px solid $blue;
     padding-left: 1.5em;
+  }
+}
+
+
+
+@media(max-width: 700px) {
+  .menu-area {
+    .menu-overlay {
+      background-size: 75%;
+    }
   }
 }
