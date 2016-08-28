@@ -7,14 +7,16 @@ $link = get_field('podcast_url');
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-	<header class="article-header">
-		<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
-		<span class="duration"><?php the_field('duration'); ?> Minutes</span>
-		<?php get_template_part( 'parts/content', 'byline' ); ?>
+	<header class="article-header row">
+		<?php the_post_thumbnail('medium', array('class' => 'columns small-12 medium-4')); ?>
+		<div class="columns small-12 medium-8">
+			<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
+			<span class="duration"><?php the_field('duration'); ?> Minutes</span>
+			<?php get_template_part( 'parts/content', 'byline' ); ?>
+		</div>
     </header> <!-- end article header -->
 
     <section class="entry-content" itemprop="articleBody">
-		<?php the_post_thumbnail('full'); ?>
 		<?php the_content(); ?>
 		<?php if($link !== ''): ?>
 			<a class="button button-cta" href="<?php print $link; ?>">Listen Now</a>

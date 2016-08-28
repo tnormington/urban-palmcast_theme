@@ -47,7 +47,7 @@ CSS file.
 // @include foundation-dropdown-menu;
 @include foundation-flex-video;
 // @include foundation-label;
-// @include foundation-media-object;
+@include foundation-media-object;
 @include foundation-menu;
 // @include foundation-menu-icon;
 // @include foundation-off-canvas;
@@ -81,7 +81,7 @@ CSS file.
 @import "theme/menu";
 @import "theme/about_us";
 @import "theme/podcast";
-@import "theme/front-page-order";
+@import "theme/utility";
 
 
 // Import your retina/HD styles

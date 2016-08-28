@@ -12,6 +12,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta class="foundation-mq">
 
+		<meta property="og:url"           content="<?php echo get_bloginfo('url'); ?>" />
+		<meta property="og:type"          content="website" />
+		<meta property="og:title"         content="<?php echo get_bloginfo('name'); ?>" />
+		<meta property="og:description"   content="<?php echo get_bloginfo('description'); ?>" />
+		<meta property="og:image"         content="<?php echo get_template_directory_uri(); ?>/assets/images/logo_on-dark@2x.png" />
+
 		<!-- If Site Icon isn't set in customizer -->
 		<?php if ( ! function_exists( 'has_site_icon' ) || ! has_site_icon() ) { ?>
 			<!-- Icons & Favicons -->
@@ -40,6 +46,14 @@
 	<!-- Uncomment this line if using the Off-Canvas Menu -->
 
 	<body <?php body_class(); ?>>
+		<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 		<div class="off-canvas-wrapper">
 
