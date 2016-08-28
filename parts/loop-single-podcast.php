@@ -15,6 +15,7 @@ $link = get_field('podcast_url');
 			<?php get_template_part( 'parts/content', 'byline' ); ?>
 		</div>
     </header> <!-- end article header -->
+		<hr>
 
     <section class="entry-content" itemprop="articleBody">
 		<?php the_content(); ?>
