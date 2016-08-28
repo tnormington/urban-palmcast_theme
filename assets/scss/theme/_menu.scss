@@ -1,8 +1,8 @@
 .menu-area {
   position: relative;
   .menu-toggle {
-    height: 75px;
-    width: 75px;
+    height: 85px;
+    width: 85px;
     border-radius: 50%;
     background-color: $blue;
     padding: 1em;
@@ -16,6 +16,15 @@
     right: 2em;
     // transform: translate(-50%, -50%);
     z-index: 15;
+    transition: all 0.15s ease-out;
+    box-shadow: 0 0 3px rgba($black, 0.15), 1px 1px 3px rgba($black, 0.35);    
+    &.open {
+      background-color: $white;
+      color: $black;
+    }
+    &:active {
+      transform: scale(0.95);
+    }
   }
   .menu-overlay {
     background-color: #000;

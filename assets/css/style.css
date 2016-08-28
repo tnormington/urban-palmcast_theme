@@ -3072,8 +3072,8 @@ article .simplePullQuote {
 .menu-area {
   position: relative; }
   .menu-area .menu-toggle {
-    height: 75px;
-    width: 75px;
+    height: 85px;
+    width: 85px;
     border-radius: 50%;
     background-color: #2679ED;
     padding: 1em;
@@ -3084,7 +3084,14 @@ article .simplePullQuote {
     position: fixed;
     top: 2em;
     right: 2em;
-    z-index: 15; }
+    z-index: 15;
+    transition: all 0.15s ease-out;
+    box-shadow: 0 0 3px rgba(10, 10, 10, 0.15), 1px 1px 3px rgba(10, 10, 10, 0.35); }
+    .menu-area .menu-toggle.open {
+      background-color: #fefefe;
+      color: #0a0a0a; }
+    .menu-area .menu-toggle:active {
+      transform: scale(0.95); }
   .menu-area .menu-overlay {
     background-color: #000;
     background-image: url("../images/menu_bg.png");
@@ -3173,6 +3180,11 @@ article .simplePullQuote {
     width: 100%;
     background-image: url("../images/striped_footer.png");
     background-repeat: repeat-x; }
+
+.latest-podcast .duration {
+  margin: 1em 0;
+  font-style: italic;
+  color: #F8E71C; }
 
 .latest-podcast img {
   width: 100%; }

@@ -17,16 +17,17 @@ jQuery(document).ready(function() {
       if(!$that.hasClass('open')) {
         // if the button doesn't have the 'open' class
         // open the menu
-        $menu_overlay.animate({
+        $that.text('CLOSE');
+        $menu_overlay.velocity({
           width: '100vw',
           height: '100vh',
           opacity: '1'
-        });
-        // $menu.fadeIn('fast');
-        // $menu.css('opacity','100%', 'display', 'block');
-        $menu.animate({
+        }, 150);
+        $menu.velocity({
           opacity: '100',
-        }, function() {
+        },
+        200,
+         function() {
           $menu.css({
             pointerEvents: 'initial',
             display: 'block',
@@ -35,14 +36,17 @@ jQuery(document).ready(function() {
       } else {
         // the button has the 'open' class
         // close the menu
-        $menu_overlay.animate({
+        $that.text('MENU');
+        $menu_overlay.velocity({
           width: '0px',
           height: '0px',
           opacity: '0'
-        });
-        $menu.animate({
+        }, 150);
+        $menu.velocity({
           opacity: '0',
-        }, function() {
+        },
+        150,
+         function() {
           $menu.css({
             pointerEvents: 'none',
             display: 'none',

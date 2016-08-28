@@ -1,4 +1,9 @@
 .latest-podcast {
+  .duration {
+    margin: 1em 0;
+    font-style: italic;
+    color: $yellow;
+  }
   img {
     width: 100%;
   }

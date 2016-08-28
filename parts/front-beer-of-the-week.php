@@ -24,14 +24,18 @@
     <h3 class="title"><?php print $title; ?></h3>
     <h4 class="company"><a href='<?php print $company_url; ?>'><?php ($company !== null) ? print $company : print 'Brewing Company'; ?></a></h4>
     <hr>
-    <span class="style beer-meta"><span class="label">Style:</span><?php print $style; ?></span>
-    <hr>
+    <?php if($style !== null): ?>
+      <span class="style beer-meta"><span class="label">Style:</span><?php print $style; ?></span>
+      <hr>
+    <?php endif; ?>
     <span class="abv beer-meta"><span class="label">ABV:</span><?php print $abv; ?>%</span>
     <hr>
     <span class="ibu beer-meta"><span class="label">IBU:</span><?php print $ibu; ?></span>
     <hr>
-    <span class="awards"><h5>Awards:</h5><?php print $awards; ?></span>
-    <hr>
+    <?php if($awards !== ''): ?>
+      <span class="awards"><h5>Awards:</h5><?php print $awards; ?></span>
+      <hr>
+    <?php endif; ?>
     <span class="rating beer-meta">
       <span class="label">Rating:</span>
 

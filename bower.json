@@ -1,8 +1,10 @@
 {
-  "name": "JointsWP",
+  "name": "urban-palm-cast-theme",
   "private": true,
-  "ignore":  [],
+  "ignore": [],
   "dependencies": {
-    "foundation-sites": ">=6.1"
+    "foundation-sites": ">=6.1",
+    "jquery-ui": "^1.12.0",
+    "velocity": "^1.2.3"
   }
 }
