@@ -2951,6 +2951,12 @@ PLUGIN STYLES
 .button-link {
   display: block; }
 
+.media-object img {
+  max-width: 100%; }
+
+.media-object .media-object-section:first-child {
+  max-width: 100px; }
+
 .footer .copyright {
   font-size: 0.75em; }
 

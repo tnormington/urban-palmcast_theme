@@ -35,3 +35,12 @@
 .button-link {
   display: block;
 }
+
+.media-object {
+  img {
+    max-width: 100%;
+  }
+  .media-object-section:first-child {
+    max-width: 100px;
+  }
+}
