@@ -94,6 +94,11 @@
 
 @media(max-width: 500px) {
   .menu-area {
+    .menu-main-menu-container {
+      ul {
+        font-size: 1.5em;
+      }
+    }
     .menu-overlay {
       background-size: 75%;
     }

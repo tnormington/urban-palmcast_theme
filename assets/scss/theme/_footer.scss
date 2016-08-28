@@ -5,6 +5,7 @@
   .footer-image {
     margin-bottom: -2px;
     width: 100%;
+    // min-width: 950px;
   }
   .inner-footer-wrapper {
     background-color: #000;
@@ -26,5 +27,13 @@
         }
       }
     }
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .footer .footer-image {
+    // transform: translateX(-50%);
   }
 }

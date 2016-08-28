@@ -2599,7 +2599,7 @@ NAVIGATION STYLES
 POSTS & CONTENT STYLES
 *********************/
 #content #inner-content {
-  padding: 1rem 0rem; }
+  padding: 0 0.25em; }
 
 .page-title .vcard {
   border: 0px;
@@ -2934,7 +2934,8 @@ PLUGIN STYLES
   border-bottom: 1px solid white; }
 
 .button {
-  transition: all 0.15s ease-out; }
+  transition: all 0.15s ease-out;
+  margin: 0; }
 
 .button-cta {
   /* Rectangle 13: */
@@ -2956,6 +2957,14 @@ PLUGIN STYLES
 
 .media-object .media-object-section:first-child {
   max-width: 100px; }
+
+.columns {
+  padding: 0 0.25em; }
+
+@media (max-width: 600px) {
+  .panel {
+    padding: 0.5em;
+    margin-bottom: 0.5em; } }
 
 .footer .copyright {
   font-size: 0.75em; }
@@ -3178,6 +3187,8 @@ article .simplePullQuote {
   color: #2679ED; }
 
 @media (max-width: 500px) {
+  .menu-area .menu-main-menu-container ul {
+    font-size: 1.5em; }
   .menu-area .menu-overlay {
     background-size: 75%; } }
 
