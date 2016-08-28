@@ -2955,15 +2955,22 @@ PLUGIN STYLES
   font-size: 0.75em; }
 
 .footer .footer-image {
-  margin-bottom: -2px; }
+  margin-bottom: -2px;
+  width: 100%; }
 
 .footer .inner-footer-wrapper {
-  background-color: #0a0a0a; }
+  background-color: #000; }
 
 .footer .footer-nav ul li {
   display: block; }
   .footer .footer-nav ul li a {
+    font-weight: 500;
     color: #fefefe; }
+    .footer .footer-nav ul li a:hover {
+      padding-left: 1.5em; }
+  .footer .footer-nav ul li.active a {
+    color: #2679ED;
+    padding-left: 2em; }
 
 article .simplePullQuote {
   background-image: url("../images/block_quote.png");
@@ -3149,7 +3156,9 @@ article .simplePullQuote {
       .menu-area .menu-main-menu-container ul li {
         display: block; }
       .menu-area .menu-main-menu-container ul a {
-        color: white; }
+        font-weight: 500;
+        color: #fefefe;
+        text-shadow: 1px 1px 3px rgba(10, 10, 10, 0.5); }
 
 .menu-main-menu-container li a {
   transition: all 0.15s ease-out; }
@@ -3159,10 +3168,10 @@ article .simplePullQuote {
 
 .menu-main-menu-container li.active a {
   background-color: transparent;
-  border-left: 1px solid #2679ED;
-  padding-left: 1.5em; }
+  padding-left: 1.5em;
+  color: #2679ED; }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   .menu-area .menu-overlay {
     background-size: 75%; } }
 

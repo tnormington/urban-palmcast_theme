@@ -4,16 +4,25 @@
   }
   .footer-image {
     margin-bottom: -2px;
+    width: 100%;
   }
   .inner-footer-wrapper {
-    background-color: $black;
+    background-color: #000;
   }
   .footer-nav {
     ul {
       li {
         display: block;
         a {
+          font-weight: 500;
           color: $white;
+          &:hover {
+            padding-left: 1.5em;
+          }
+        }
+        &.active a {
+          color: $blue;
+          padding-left: 2em;
         }
       }
     }

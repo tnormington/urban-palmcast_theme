@@ -17,7 +17,7 @@
     // transform: translate(-50%, -50%);
     z-index: 15;
     transition: all 0.15s ease-out;
-    box-shadow: 0 0 3px rgba($black, 0.15), 1px 1px 3px rgba($black, 0.35);    
+    box-shadow: 0 0 3px rgba($black, 0.15), 1px 1px 3px rgba($black, 0.35);
     &.open {
       background-color: $white;
       color: $black;
@@ -62,7 +62,9 @@
         display: block;
       }
       a {
-        color: white;
+        font-weight: 500;
+        color: $white;
+        text-shadow: 1px 1px 3px rgba($black, 0.5);
       }
     }
   }
@@ -75,20 +77,22 @@
 .menu-main-menu-container {
   li a {
     transition: all 0.15s ease-out;
+    // color: $blue;
   }
   li a:hover {
     padding-left: 1em;
   }
   li.active a {
     background-color: transparent;
-    border-left: 1px solid $blue;
+    // border-left: 1px solid $blue;
     padding-left: 1.5em;
+    color: $blue;
   }
 }
 
 
 
-@media(max-width: 700px) {
+@media(max-width: 500px) {
   .menu-area {
     .menu-overlay {
       background-size: 75%;
