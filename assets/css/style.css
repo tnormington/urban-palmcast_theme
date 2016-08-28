@@ -2952,11 +2952,12 @@ PLUGIN STYLES
 .button-link {
   display: block; }
 
-.media-object img {
-  max-width: 100%; }
-
-.media-object .media-object-section:first-child {
-  max-width: 100px; }
+.media-object {
+  margin-bottom: 0; }
+  .media-object img {
+    max-width: 100%; }
+  .media-object .media-object-section:first-child {
+    width: 300px; }
 
 .columns {
   padding: 0 0.25em; }
