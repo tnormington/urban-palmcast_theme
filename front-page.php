@@ -15,15 +15,6 @@
 						<?php endif; ?>
 						<a href="https://itunes.apple.com/us/podcast/urban-palm-cast/id1060814978?mt=2" target="_blank" class="button button-link button-cta centered">Get It In Your Ears!</a>
 					</div>
-
-					<div class="panel show-for-large">
-						<a class="twitter-timeline"
-						href="https://twitter.com/UrbanPalm_Cast"
-						data-theme="dark"
-						data-tweet-limit="3"
-						data-chrome="nofooter noborders transparent">Tweets by UrbanPalm_Cast</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-					</div>
-
 					<div class="panel">
 
 						<h2 class="social-media-header">Follow Us</h2>
@@ -33,6 +24,10 @@
 							<li><a href="https://www.instagram.com/urbanpalmcast/" target="_blank" class="instagram">Instagram</a></li>
 						</ul>
 					</div>
+					<div class="panel">
+						<h2 class="block-header">Instagrams</h2>
+						<!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/311554e7bf5c5f8c84eb3d246193a907.html" id="lightwidget_311554e7bf" name="lightwidget_311554e7bf"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+					</div>
 
 				</main> <!-- end #main -->
 				<main id="main-middle" class="large-4 small-12 columns">
@@ -40,13 +35,6 @@
 				</main>
 				<main id="main-right" class="large-4 small-12 columns">
 					<?php get_template_part( 'parts/front', 'beer-of-the-week'); ?>
-					<div class="panel hide-for-large">
-						<a class="twitter-timeline"
-						href="https://twitter.com/UrbanPalm_Cast"
-						data-theme="dark"
-						data-tweet-limit="3"
-						data-chrome="nofooter noborders transparent">Tweets by UrbanPalm_Cast</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-					</div>
 				</main>
 
 		</div> <!-- end #inner-content -->

@@ -12,6 +12,8 @@ jQuery(document).ready(function() {
 
 
 
+
+
     $menu_toggle.click(function() {
       var $that = jQuery(this);
       if(!$that.hasClass('open')) {
