@@ -6,7 +6,7 @@ and Foundation play nice together.
 
 jQuery(document).ready(function() {
 
-    var $menu_toggle = jQuery('#js-menu-toggle');
+  var $menu_toggle = jQuery('#js-menu-toggle');
     var $menu_overlay = jQuery('#js-menu-overlay');
     var $menu = jQuery('.menu-area .menu-main-menu-container');
 

@@ -1930,10 +1930,6 @@ input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #cacaca; }
 
-input::-moz-placeholder,
-textarea::-moz-placeholder {
-  color: #cacaca; }
-
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: #cacaca; }
@@ -2988,6 +2984,9 @@ PLUGIN STYLES
     color: #2679ED;
     padding-left: 2em; }
 
+.footer .copyright {
+  padding: 0 1em; }
+
 article .simplePullQuote {
   background-image: url("../images/block_quote.png");
   background-repeat: no-repeat;
@@ -3300,7 +3299,6 @@ to display none.
     background: transparent !important;
     color: black !important;
     text-shadow: none !important;
-    -webkit-filter: none !important;
     filter: none !important;
     -ms-filter: none !important; }
   a, a:visited {

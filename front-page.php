@@ -26,7 +26,7 @@
 					</div>
 					<div class="panel">
 						<h2 class="block-header">Instagrams</h2>
-						<!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/311554e7bf5c5f8c84eb3d246193a907.html" id="lightwidget_311554e7bf" name="lightwidget_311554e7bf"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+						<!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/bbeda7a7cd285dad9be640f9dd47d416.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
 					</div>
 
 				</main> <!-- end #main -->
